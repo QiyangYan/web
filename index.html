@@ -75,7 +75,7 @@
       </tr>
       </tbody></table>
 
-      <!-- Paper -->
+      <!-- VFF ICRA -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr onmouseout="vff_stop()" onmouseover="vff_start()">
 <!--        <td style="padding:20px;width:25%;aspect-ratio: 1/1;object-fit: cover;vertical-align:middle">-->
@@ -110,7 +110,7 @@
           <a href="https://profiles.imperial.ac.uk/a.spiers">Adam J. Spiers</a>,
           <br>
 <!--        Conference/Journal/arXiv -->
-<!--        <em>arXiv</em>, 2024-->
+          <em>Submitted to ICRA 2025</em>
           <br>
           <a href="https://sites.google.com/view/vf-ihm-il/home">project page</a>
 <!--        /-->
@@ -129,12 +129,12 @@
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
-          <h2>Research Experience</h2>
+          <h2>Research Experiences</h2>
         </td>
       </tr>
       </tbody></table>
 
-      <!-- project 1 -->
+      <!-- tactile sensor data preparation -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr onmouseout="tactile_stop()" onmouseover="tactile_start()">
 <!--        <td style="padding:20px;width:25%;aspect-ratio: 1/1;object-fit: cover;vertical-align:middle">-->
@@ -169,6 +169,57 @@
           <p></p>
           <p>
             Responsible for dataset preparation for development of generalisable learning-based approaches to bridge the gap between various type of tactile sensors.
+          </p>
+        </td>
+      </tr>
+
+      </tbody></table>
+
+      <!-- Projects -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+          <h2>Projects</h2>
+        </td>
+      </tr>
+      </tbody></table>
+
+      <!-- Pick-Manipulate-Insert System -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr onmouseout="vff_system_stop()" onmouseover="vff_system_start()">
+<!--        <td style="padding:20px;width:25%;aspect-ratio: 1/1;object-fit: cover;vertical-align:middle">-->
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="width:100%; aspect-ratio: 1 / 1; overflow: hidden;">
+            <div class="two" id="vff_system_image" style="width:100%; height:100%; overflow: hidden;">
+              <img src="images/vff_system_before.mp4" style="width:100%; height:100%; object-fit: cover;">
+            </div>
+            <img src="images/vff_system_before.mp4" style="width:100%; height:100%; object-fit: cover; ">
+          </div>
+
+            <script type="text/javascript">
+                function vff_system_start() {
+                    document.getElementById('vff_system_image').style.opacity = "1";
+                }
+                function vff_system_stop() {
+                    document.getElementById('vff_system_image').style.opacity = "0";
+                }
+                vff_stop()
+            </script>
+        </td>
+
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">A Pick-Manipulate-Insert System with Variable-Friction Gripper for Cube
+          </span>
+          <br>
+          <strong>Qiyang Yan (Research Assistant)</strong>
+          <br>
+<!--        Conference/Journal/arXiv -->
+          <em>Manipulation and Touch Lab, Imperial College London</em>, May-June 2023
+          <br>
+          <a href="https://github.com/QiyangYan/WIHM-Variable-Friction-Finger-with-Ur5e-and-Realsense">code</a>
+          <p></p>
+          <p>
+            Developed a vision-based closed-loop pick-manipulate-insert system with a variable-friction gripper and UR5e robotic arm using ROS. Developed a model-based IHM planner and UR5e arm trajectory planner, achieving a 92% success rate for this task for cube with positional accuracy around 3mm.
           </p>
         </td>
       </tr>
