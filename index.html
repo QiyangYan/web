@@ -186,22 +186,22 @@
 
       <!-- Pick-Manipulate-Insert System -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="vff_system_stop()" onmouseover="vff_system_start()">
+      <tr onmouseout="ihm_system_stop()" onmouseover="ihm_system_start()">
 <!--        <td style="padding:20px;width:25%;aspect-ratio: 1/1;object-fit: cover;vertical-align:middle">-->
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="width:100%; aspect-ratio: 1 / 1; overflow: hidden;">
-            <div class="two" id="vff_system_image" style="width:100%; height:100%; overflow: hidden;">
-              <img src="images/vff_system_before.mp4" style="width:100%; height:100%; object-fit: cover;">
+            <div class="two" id="ihm_system_image" style="width:100%; height:100%; overflow: hidden;">
+              <img src="images/ihm_system_before.gif" style="width:100%; height:100%; object-fit: cover;">
             </div>
-            <img src="images/vff_system_before.mp4" style="width:100%; height:100%; object-fit: cover; ">
+            <img src="images/ihm_system_before.gif" style="width:100%; height:100%; object-fit: cover; ">
           </div>
 
             <script type="text/javascript">
-                function vff_system_start() {
-                    document.getElementById('vff_system_image').style.opacity = "1";
+                function ihm_system_start() {
+                    document.getElementById('ihm_system_image').style.opacity = "1";
                 }
-                function vff_system_stop() {
-                    document.getElementById('vff_system_image').style.opacity = "0";
+                function ihm_system_stop() {
+                    document.getElementById('ihm_system_image').style.opacity = "0";
                 }
                 vff_stop()
             </script>
