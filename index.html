@@ -80,6 +80,7 @@
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <!-- VFF ICRA -->
       <tr onmouseout="vff_stop()" onmouseover="vff_start()">
+<!--        <td style="padding:20px;width:25%;aspect-ratio: 1/1;object-fit: cover;vertical-align:middle">-->
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="width:100%; aspect-ratio: 1 / 1; overflow: hidden;">
             <div class="two" id="vff_image" style="width:100%; height:100%; overflow: hidden;">
@@ -127,6 +128,7 @@
       </tbody></table>
 
 
+
       <!-- Research Experience -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
@@ -135,28 +137,31 @@
         </td>
       </tr>
       </tbody></table>
+
       <!-- tactile sensor data preparation -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr onmouseout="tactile_stop()" onmouseover="tactile_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+<!--        <td style="padding:20px;width:25%;aspect-ratio: 1/1;object-fit: cover;vertical-align:middle">-->
+        <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="width:100%; aspect-ratio: 1 / 1; overflow: hidden;">
-              <div class="two" id="tactile_image" style="width:100%; height:100%; overflow: hidden;">
-                  <img src="images/tactile_after.gif" style="width:100%; height:100%; object-fit: cover;">
-              </div>
+            <div class="two" id="tactile_image" style="width:100%; height:100%; overflow: hidden;">
+              <img src="images/tactile_after.gif" style="width:100%; height:100%; object-fit: cover;">
+            </div>
               <img src="images/tactile_before.jpeg" style="width:100%; height:100%; object-fit: cover; ">
           </div>
 
-          <script type="text/javascript">
-              function tactile_start() {
-                  document.getElementById('tactile_image').style.opacity = "1";
-              }
-              function tactile_stop() {
-                  document.getElementById('tactile_image').style.opacity = "0";
-              }
-              vff_stop()
-          </script>
-      </td>
+            <script type="text/javascript">
+                function tactile_start() {
+                    document.getElementById('tactile_image').style.opacity = "1";
+                }
+                function tactile_stop() {
+                    document.getElementById('tactile_image').style.opacity = "0";
+                }
+                vff_stop()
+            </script>
+        </td>
 
-      <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:20px;width:75%;vertical-align:middle">
           <span class="papertitle">Sensor-Agnostic Pattern Recognition Framework for Multi-Modal Tactile Sensing
           </span>
           <br>
