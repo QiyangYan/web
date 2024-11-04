@@ -66,6 +66,8 @@
       </tr>
       </tbody></table>
 
+
+
       <!-- Publication -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
@@ -117,13 +119,15 @@
 <!--        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>-->
           <p></p>
           <p>
-            Introducing the first end-to-end data-efficient learning framework for variable friction hand, allowing gripper to learn to precisely manipulate arbitrary objects for any target pose on real hardware within 2 hours, with error around 3mm and 3°.
+            Introducing the end-to-end data-efficient learning framework for variable friction hand, allowing gripper to learn to precisely manipulate arbitrary objects (the first time) for any target pose on real hardware within 2 hours, with error around 3mm and 3°.
           </p>
         </td>
       </tr>
 
 
       </tbody></table>
+
+
 
       <!-- Research Experience -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -175,6 +179,8 @@
 
       </tbody></table>
 
+
+
       <!-- Projects -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
@@ -184,8 +190,51 @@
       </tr>
       </tbody></table>
 
-      <!-- Pick-Manipulate-Insert System -->
+        <!-- VFF RL -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr onmouseout="vff_rl_stop()" onmouseover="vff_rl_start()">
+<!--        <td style="padding:20px;width:25%;aspect-ratio: 1/1;object-fit: cover;vertical-align:middle">-->
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="width:100%; aspect-ratio: 1 / 1; overflow: hidden;">
+            <div class="two" id="vff_rl_image" style="width:100%; height:100%; overflow: hidden;">
+              <img src="images/vff_rl_before.gif" style="width:100%; height:100%; object-fit: cover;">
+            </div>
+            <img src="images/vff_rl_before.gif" style="width:100%; height:100%; object-fit: cover; ">
+          </div>
+
+            <script type="text/javascript">
+                function vff_rl_start() {
+                    document.getElementById('vff_rl_image').style.opacity = "1";
+                }
+                function vff_rl_stop() {
+                    document.getElementById('vff_rl_image').style.opacity = "0";
+                }
+                vff_stop()
+            </script>
+        </td>
+
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/QiyangYan/WIHM-Variable-Friction-Finger-with-Ur5e-and-Realsense">
+                <span class="papertitle">Variable-Friction In-Hand Manipulation for Polygons via Reinforcement Learning with Sim2Real Transfer
+                </span>
+            </a>
+            <br>
+            <strong>Qiyang Yan (Leader)</strong>
+            <br>
+            <em>Manipulation and Touch Lab, Imperial College London</em>, May-June 2023
+            <br>
+            <a href="https://github.com/QiyangYan/WIHM-Variable-Friction-Finger-with-Ur5e-and-Realsense">project page</a>
+            /
+            <a href="https://github.com/QiyangYan/WIHM-Variable-Friction-Finger-with-Ur5e-and-Realsense">report</a>
+            <p></p>
+            <p>
+                Developed the first learning-based framework for the variable-friction gripper to learn to manipulate irregular polygons on real robot, achieving 95% success rate with average errors around 6 mm and 6°.
+            </p>
+        </td>
+      </tr>
+
+
+      <!-- Pick-Manipulate-Insert System -->
       <tr onmouseout="ihm_system_stop()" onmouseover="ihm_system_start()">
 <!--        <td style="padding:20px;width:25%;aspect-ratio: 1/1;object-fit: cover;vertical-align:middle">-->
         <td style="padding:20px;width:25%;vertical-align:middle">
